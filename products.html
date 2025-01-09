@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Re-Fabric</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imatge.png" alt="Re-Fabric Logo" width="140" height="100">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="products.html">Inscripcions</a></li>
+        <li><a href="about.html">Sobre la Cursa</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Inscripcions a la Cursa Rodacaballs</h1>
+        <p>
+            Participa en una de les curses més emocionants i espectaculars de la Serra de Caballs. Escull la modalitat que s’adapti millor al teu nivell i edat. Inscriu-te abans que s’exhaureixin les places!
+        </p>
+
+        <a href="#formulari-inscripcio" class="button">Inscriu-te Ara</a>
+
+        <h2>Preus d’Inscripció</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Modalitat</th>
+                    <th>Edat</th>
+                    <th>Preu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juvenil</td>
+                    <td>Trail 10 km</td>
+                    <td>12-17 anys</td>
+                    <td>15 €</td>
+                </tr>
+                <tr>
+                    <td>Adults</td>
+                    <td>Trail 10 km</td>
+                    <td>18+ anys</td>
+                    <td>25 €</td>
+                </tr>
+                <tr>
+                    <td>Adults</td>
+                    <td>Trail 20 km</td>
+                    <td>18+ anys</td>
+                    <td>30 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="formulari-inscripcio">Formulari d'Inscripció</h2>
+        <form action="/submit-inscripcio" method="POST">
+            <label for="nom">Nom i Cognoms:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Correu Electrònic:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="edat">Edat:</label>
+            <input type="number" id="edat" name="edat" required min="12">
+
+            <label for="modalitat">Modalitat:</label>
+            <select id="modalitat" name="modalitat" required>
+                <option value="" disabled selected>Selecciona una opció</option>
+                <option value="trail10-juvenil">Trail 10 km (Juvenil)</option>
+                <option value="trail10-adults">Trail 10 km (Adults)</option>
+                <option value="trail20">Trail 20 km</option>
+            </select>
+
+            <label for="pagament">Mètode de Pagament:</label>
+            <select id="pagament" name="pagament" required>
+                <option value="" disabled selected>Selecciona una opció</option>
+                <option value="targeta">Targeta de Crèdit/Dèbit</option>
+                <option value="transferencia">Transferència Bancària</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Enviar Inscripció</button>
+        </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 Cursa Rodacaballs. Tots els drets reservats.</p>
+    <p><a href="about.html">Més informació</a> | <a href="contact.html">Contacte</a></p>
+  </footer>
+</body>
+</html>
