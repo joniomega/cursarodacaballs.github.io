@@ -14,7 +14,11 @@ body, h1, p, ul, li {
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(180deg, #81c784, #81c784);
+  
+  background-image: url('fons.png');
+  background-size: cover;          
+  background-repeat: no-repeat;   
+  background-position: center;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
@@ -34,8 +38,9 @@ header {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #00e1ff, #ff7b00);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
-  border-bottom: 5px solid #79c78c;
+  border-bottom: 5px solid #ffffff;
 }
 
 .logo img {
@@ -76,13 +81,14 @@ nav ul li a:hover {
 
 /* ESTIL DEL PEU DE PÀGINA */
 footer {
-  margin-top: 20px;
+  margin-top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #ff7b00, #00e1ff); /* Gradient invertit */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   padding: 20px 40px;
-  border-top: 5px solid #79c78c;
+  border-top: 6px solid #ffffff;
 }
 
 footer p {
@@ -119,8 +125,7 @@ main {
   margin: 0 auto;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
@@ -187,6 +192,11 @@ table th, table td {
 
 table th {
   background-color: #f4f4f4;
+}
+
+ul {
+  margin-left: 30px; /* Distància des de l'esquerra */
+  margin-right: 30px; /* Distància des de la dreta */
 }
 
 /* FORMULARI */
