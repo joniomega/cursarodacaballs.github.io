@@ -369,68 +369,6 @@ form button:hover {
 .gallery-item:hover .caption {
   opacity: 1;
 }
-/* CARRUSEL */
-.carousel-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-}
-
-.carousel-item {
-  min-width: 100%;
-  overflow: hidden;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-/* Botons de navegació */
-.carousel-prev, .carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1000;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-
-.carousel-prev:hover, .carousel-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 
 /* RESPONSIVITAT EXTRA */
 @media (max-width: 992px) {
