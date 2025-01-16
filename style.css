@@ -509,7 +509,6 @@ form button:hover {
 
 /* SECCIÓ DE LOGOS */
 .social-section {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -518,7 +517,7 @@ form button:hover {
   background-color: #0056a3;
   border: 1px solid #0056a3;
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
   font-family: 'Roboto', sans-serif;
   max-width: 300px; 
   margin: 0 auto;
@@ -526,6 +525,7 @@ form button:hover {
 }
 
 .social-item {
+  
   display: flex;
   align-items: center;
   justify-content: flex-start; 
