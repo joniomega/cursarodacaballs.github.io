@@ -509,6 +509,7 @@ form button:hover {
 
 /* SECCIÓ DE LOGOS */
 .social-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin-top: 40px;
   display: flex;
   flex-direction: column;
