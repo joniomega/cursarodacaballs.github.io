@@ -558,3 +558,116 @@ form button:hover {
   margin: 30px;
   margin-top: 10px;
 }
+.carousel-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px; /* Amplada màxima del carrusel */
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ccc; /* Opcional: per veure els límits del carrusel */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Assegura que el contenidor ocupi el 100% de l'amplada */
+}
+
+.carousel-item {
+  min-width: 100%; /* Cada diapositiva ocupa el 100% del contenidor */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Assegura que les imatges no surtin del contenidor */
+}
+
+.carousel-item img {
+  width: 100%; /* Ocupa tot l'amplada del contenidor */
+  height: 400px; /* Alçada fixa per a totes les imatges */
+  object-fit: cover; /* Retalla la imatge per adaptar-se a la mida sense deformar-la */
+  display: block;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  align-self: center;
+  z-index: 10; /* Assegura que els botons estiguin per sobre de les imatges */
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+/* Contenedor principal del carrusel */
+.custom-carousel {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+/* Título del carrusel */
+.carousel-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de Swiper (personalizado) */
+.custom-swiper {
+  width: 100%;
+  height: 400px; 
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Imágenes del carrusel */
+.carousel-img {
+  width: 1000%;
+  height: 500%;
+  object-fit: cover; /* Ajuste sin deformación */
+  align-self: center;
+}
+
+/* Botones de navegación personalizados */
+.custom-button-next,
+.custom-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.custom-button-next {
+  right: 260px;
+  top: 500px;
+}
+
+.custom-button-prev {
+  left: 260px;
+  top: 500px;
+}

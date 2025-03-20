@@ -25,6 +25,36 @@
     <h1>Benvinguts a la Cursa Rodacaballs</h1>
     <p>Descobreix els paisatges espectaculars de la Serra de Caballs mentre poses a prova els teus límits en aquesta emocionant cursa de muntanya.</p>
     
+    <section class="custom-carousel">
+      <h2 class="carousel-title">Galería de Imágenes</h2>
+      
+      <!-- Contenedor del carrusel -->
+      <div class="custom-swiper">
+        <div class="swiper-wrapper">
+          <!-- Diapositivas -->
+          <div class="swiper-slide">
+            <img src="imatgesobre1.png" alt="Imatge 1" class="carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="imatgesobre2.png" alt="Imatge 2" class="carousel-img">
+          </div>
+          <div class="swiper-slide">
+            <img src="imatgesobre3.png" alt="Imatge 3" class="carousel-img">
+          </div>
+        </div>
+        
+        <!-- Botones personalizados -->
+        <div class="custom-button-next">&#10095;</div>
+        <div class="custom-button-prev">&#10094;</div>
+      </div>
+    </section>
+    <section class="video-section">
+      <h2>Vídeo de la Cursa Rodacaballs</h2>
+      <video controls width="100%" height="auto">
+        <source src="videos/cursa.mp4" type="video/mp4">
+        El teu navegador no suporta la reproducció de vídeos.
+      </video>
+    </section>
 
     <section class="highlights">
       <h2>Què t’espera?</h2>
@@ -93,5 +123,20 @@
     <p>&copy; 2025 Cursa Rodacaballs. Tots els drets reservats.</p>
     <p><a href="about.html">Més informació</a> | <a href="contact.html">Contacte</a></p>
   </footer>
+  <!-- CSS de Swiper (solo lo necesario) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- JavaScript de Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
+<script>
+  // Inicializar Swiper con clases personalizadas
+  const swiper = new Swiper(".custom-swiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".custom-button-next",
+      prevEl: ".custom-button-prev",
+    },
+  });
+</script>
